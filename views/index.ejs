@@ -1,0 +1,22 @@
+<%-include("header.ejs")%>
+<h1 class="tittle"><strong>Hey, we’re Bloogy.</strong><div class="xyz">See our thoughts, <span class="auto-type"></span></div></h1>
+<hr width="95%">
+
+<p class="story-txt">Get Started With Our <strong>Best Stories</strong></p>
+
+<%-include("stories.ejs")%>
+
+<%-include("recent.ejs")%>
+
+<%-include("subscribe.ejs")%>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed=new Typed(".auto-type",{
+        strings:["Stories and Ideas.","Experience.","Articles.","Events."],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
+<%-include("footer.ejs")%>

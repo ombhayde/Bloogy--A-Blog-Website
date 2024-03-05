@@ -1,0 +1,21 @@
+<%-include("header.ejs") %>
+<h1 class="tittle"><strong>Hey, we’re Bloogy.</strong><div class="xyz">See our thoughts, <span class="auto-type"></span></div></h1>
+<hr width="95%">
+<%if(locals.check==="nothing"){%>
+    <h1 class="mandir-head">Field Missing</h1>
+<%}else{%>
+    <h1 class="mandir-head"><strong></strong>Yay Post Created!!🎉🎉</h1>
+    <br>
+    <h1 class="cpt"><%=pN%></h1>
+    <hr>
+    <h3 class="cpc"><%=pC%></h3>
+<%}%>
+
+<script>
+    var typed=new Typed(".auto-type",{
+        strings:["Stories and Ideas.","Experience.","Articles.","Events."],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
